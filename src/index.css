@@ -1,3 +1,55 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+::-webkit-scrollbar{
+    width: 8px;
+}
+img {
+    width: auto;
+    height: auto;
+    vertical-align: middle;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+*, *::before, *::after *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    overflow-x: hidden;
+}
+body {
+    background: #f6f6f6;
+    overflow: visible;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    -webkit-locale: auto;
+    white-space: normal;
+    margin: 0;
+    padding: 0;
+   
+    font-size: 16px;
+    line-height: 1;
+    -webkit-locale: auto;
+    white-space: normal;
+}
+.before::before{
+    content: '';
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    transition: all 0.4s ease-in-out 0s;
+    cursor: pointer;
+}
+.before:hover::before{
+    opacity: 1;
+}

@@ -13,11 +13,20 @@
     "@chakra-ui/react": "^2.6.1",
     "@emotion/react": "^11.11.0",
     "@emotion/styled": "^11.11.0",
+    "@reduxjs/toolkit": "^1.9.5",
+    "axios": "^1.4.0",
     "bootstrap": "^5.2.3",
     "framer-motion": "^10.12.16",
+    "gsap": "^3.12.2",
+    "lax.js": "^2.0.3",
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.4",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.8.0",
+    "react-lazy-load-image-component": "^1.5.6",
+    "react-redux": "^8.0.5",
+    "react-router-dom": "^6.11.2",
+    "react-sticky": "^6.0.3"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",

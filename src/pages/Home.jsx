@@ -13,11 +13,11 @@ const Home = ({ banner, projectName, projects, strategy, partners, team, newsNam
 
   return (
     <>
-      <p id='consigliere'></p>
+    
       <Banner homebanner={{banner}} />
       <HomeProjects projectName={projectName} projects={projects} />
       <HomeStartegy strategy={strategy} />
-     
+      
     </>
   )
 }

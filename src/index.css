@@ -54,3 +54,13 @@ body {
 .before:hover::before{
     opacity: 1;
 }
+.transition2{
+    transition: all .3s linear;
+}
+.top-00{
+    transform: translate(0px, -100%);
+    opacity: 0;
+    height: 0;
+    visibility: hidden;
+    pointer-events: none;
+}

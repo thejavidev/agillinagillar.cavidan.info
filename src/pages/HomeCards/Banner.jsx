@@ -4,7 +4,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { BsFillPlayFill } from 'react-icons/bs';
 
-const Banner = ({homebanner}) => {
+const   Banner = ({homebanner}) => {
     const banner1 =homebanner?.banner;
   return (
     <>

@@ -11,7 +11,8 @@ import Contact from './pages/Contact';
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
 import { getUsers } from './store/api/apiSlice';
-
+import $ from 'jquery';
+import Loader from './loader/Loader';
 
 function App() {
 
@@ -19,15 +20,22 @@ function App() {
   const { data } = useSelector((state) => state.users)
   useEffect(() => {
     dispatch(getUsers())
-
+    function pageLoader(){
+      setTimeout(() => {
+        $('.pageloader').addClass('top-00')
+      }, 2000);
+    }
+   pageLoader()
   }, [dispatch])
 
  
   return (
     <>
+    <Loader />
       <Layout footer={data?.options?.footer}>
           <Routes >
-              <Route path='/' exact element={<Home
+              <Route path='/' exact 
+                element={<Home
                 banner={data?.options?.banner}
                 projectName={data?.options?.projects} 
                 projects={data?.projects}
@@ -36,7 +44,6 @@ function App() {
                 team={data?.team}
                 newsName={data?.options?.news}
                 news={data?.news}
-                
               />} ></Route>
               <Route path='/about' exact element={<About 
                 about={data?.options?.about}  

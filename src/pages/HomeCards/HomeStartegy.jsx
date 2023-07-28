@@ -89,7 +89,7 @@ const HomeStartegy = ({ strategy }) => {
                                 </Col>
                             </Row>
                         </Col>
-                        <Col lg={12} className='mb-[400px]'>
+                        <Col lg={12} className=''>
                             <Row className='items-center justify-end '>
                                 <Col lg={3} className="flex bg-[#f6f6f6]  justify-end">
                                     <Text className='w-[50%]'>
